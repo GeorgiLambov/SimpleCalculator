@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap-theme.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="calc" class="row">
+            <form class="form-horizontal col-lg-2 col-sm-3 col-md-2 col-xs-5" style="border: 1px solid black">
+                <div class="form-group">
+                    <input class="form-control" id="display" type="text" placeholder="0" autofocus>
+                </div>
+                <div class="form-group">
+                        <button class="col-lg-3 col-sm-3 col-xs-3" value="1">1</button>            
+                        <button class="col-lg-3 col-sm-3 col-xs-3" value="2">2</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="3">3</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="+">+</button>
+                   
+                </div>
+                <div class="form-group">
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="4">4</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="5">5</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="6">6</button>
+                        <button class="col-lg-3 col-sm-3 col-xs-3" value="-">-</button>
+              
+                </div>
+                <div class="form-group">
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="7">7</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="8">8</button>
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="9">9</button> 
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="*">*</button>
+              
+                </div>
+                <div class="form-group">
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="clear">C</button> 
+						<button class="col-lg-3 col-sm-3 col-xs-3" value="0">0</button>
+                        <button class="col-lg-3 col-sm-3 col-xs-3" value="=">=</button>               
+                        <button class="col-lg-3 col-sm-3 col-xs-3" value="/">/</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="scripts/calculator.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
