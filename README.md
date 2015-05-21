@@ -1,2 +1,2 @@
 # SimpleCalculator
-Small project in Jquery &amp; Bootstrap platform at a few hours
+Small project in JQuery &amp; Bootstrap platform at a few hours
