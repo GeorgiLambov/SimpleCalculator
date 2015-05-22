@@ -14,13 +14,20 @@ app.calculator = (function () {
     }
 
     var attachCalcHandler = function (selectorMain) {
+        // Handle button click
         $(selectorMain).on('click', 'button', function (event) {
             var input = $(this).attr('value');
             var display = $('#display').val();
 
             switch (input) {
-                case "clear": display = ""; break;
-                case "=": display = eval(display); break;
+                // 'C' will clear the input/output field
+                case "clear": display = ''; break;
+                // '=' will fetch the current expression string, evaluate it,
+                // and write the result back into the input/output field
+                case '=': try { display = eval(display); } catch (e) { display = 'ERROR'; } break;
+                // 'CE' will delete the last character from the input/output field
+                case '←': display = display.replace(/.$/, ''); break;
+                // All other buttons will add a character to the input/output field
                 default: display += input; break;
             }
 
@@ -30,7 +37,6 @@ app.calculator = (function () {
             event.preventDefault();
         });
     }
-
 
     return {
         get: function () {
